@@ -31,11 +31,13 @@ BuildRequires: perl(MooseX::MultiInitArg)
 BuildRequires: perl(Net::Netrc)
 BuildRequires: perl(Net::OAuth)
 BuildRequires: perl(Scalar::Util)
+BuildRequires: perl(Test::Exception)
 BuildRequires: perl(Test::More)
 BuildRequires: perl(Try::Tiny)
 BuildRequires: perl(URI)
 BuildRequires: perl(URI::Escape)
 BuildRequires: perl(namespace::autoclean)
+
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
@@ -51,7 +53,6 @@ See the Net::Twitter manpage for full documentation.
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
-
 %make
 
 %check
@@ -69,5 +70,3 @@ rm -rf %buildroot
 %doc Changes README META.yml
 %{_mandir}/man3/*
 %perl_vendorlib/*
-
-
