@@ -1,5 +1,5 @@
 %define upstream_name    Net-Twitter
-%define upstream_version 3.13008
+%define upstream_version 3.13009
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
