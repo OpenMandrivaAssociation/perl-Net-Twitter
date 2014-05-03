@@ -13,6 +13,9 @@ Url:		http://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/Net/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
+BuildRequires: perl(Test::Warn)
+BuildRequires: perl(JSON)
+BuildRequires: perl(Carp::Clan)
 BuildRequires: perl(Module::Build)
 BuildRequires:	perl(Carp)
 BuildRequires:	perl(Crypt::SSLeay)
